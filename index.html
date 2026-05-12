@@ -39,40 +39,74 @@
 
 <!-- Switch de tema claro/escuro -->
 <div id="switch">
-    <button onclick="_toggleMode()" type="button">
+    <button onclick="_toggleMode()" type="button" id="themeToggle">
     </button>
     <span></span>
 </div>
 
 
 <!-- Menu de navegação -->
+<nav>
 <ul>
 
     <li>
 
-        <a href="#">Cadastrar</a>
+        <a href="#Menu">Menu</a>
 
     </li>
 
     <li>
 
-        <a href="#">Entrar</a>
+        <a href="#Pedidos">Pedidos</a>
 
     </li>
 
     <li>
 
-        <a href="#">Menu</a>
-
-    </li>
-
-    <li>
-
-        <a href="#">Sair</a>
+        <a href="#Contato">Contato</a>
 
     </li>
 
 </ul>
+</nav>
+
+<main>
+    <section id="menu" class="section-card">
+        <h2>Menu</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Açaí Tradicional</h3>
+            <p>300ml com granola e mel.</p>
+            <span>R$ 16,90</span>
+          </article>
+          <article class="card">
+            <h3>Açaí Premium</h3>
+            <p>500ml com banana, leite condensado e castanhas.</p>
+            <span>R$ 24,90</span>
+          </article>
+          <article class="card">
+            <h3>Tropical</h3>
+            <p>450ml com morango, kiwi e coco.</p>
+            <span>R$ 22,90</span>
+          </article>
+        </div>
+      </section>
+      <br>
+      
+    <!--Contato-->
+       <section id="pedido" class="section-card">
+        <h2>Peça pelo WhatsApp</h2>
+        <p>Escolha seu açaí e mande direto para a Mercia.</p>
+        <a class="whatsapp-button" href="https://wa.me/5543984777870" target="_blank">
+          Enviar pedido
+        </a>
+      </section>
+
+      <section id="contato" class="section-card">
+        <h2>Contato</h2>
+        <p>Instagram, WhatsApp e Facebook sempre atualizados.</p>
+      </section>
+</main>
 
 
 <!-- Links para redes sociais -->
