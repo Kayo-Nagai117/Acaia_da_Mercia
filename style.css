@@ -88,7 +88,7 @@ body * {
 #switch {
 	width: 64px;
 	position: relative;
-	margin: 4px;
+	margin: 4px ;
 }
 
 #switch button {
@@ -102,11 +102,13 @@ body * {
 	right: 0;
 	z-index: 1;
 	transform: translateY(-50%);
+	animation: slide-back 0.2s forwards;
 }
 
 .light #switch button {
-	right: auto;
-	left: 0;
+	/*right: auto;
+	left: 0;*/
+	animation: slide-in 0.2s forwards;
 }
 
 #switch span {
@@ -123,7 +125,15 @@ body * {
   border-radius: 9999px; /* Mantém arredondado */
 }
 
+
+#switch button:hover {
+	outline: 8px solid var(--highlight-color);
+	
+}
+
+
 #switch:hover span {
+	
 	background: var(--surface-color-hover);
 }
 
@@ -214,3 +224,15 @@ footer a:hover {
 		--bg-url: url(./assets/bg-desktop-light.jpg);
 	}
 }
+
+
+/*animation*/
+	@keyframes slide-in{
+		from{left: 0;}
+		to{right: 50%;}
+	}
+
+	@keyframes slide-back{
+		from{left: 50%;}
+		to{right: 0;}
+	}
