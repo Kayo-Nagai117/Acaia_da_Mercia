@@ -1,5 +1,9 @@
 {
+	"scripts": {
+    "test": "echo \"Ainda sem testes\" && exit 0"
+  },
 	"devDependencies": {
 		"@biomejs/biome": "^2.4.14"
 	}
+
 }
