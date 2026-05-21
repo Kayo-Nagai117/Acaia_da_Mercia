@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR"class="light">
+<html lang="pt-BR" class="light">
 <head>
 
 <!-- Importação da fonte Roboto do Google Fonts -->
@@ -19,31 +19,31 @@
 <title>ACAI da Mercia</title>
 
 </head>
+
+
 <body>
 
 
-<p>Bem vindos ao Açai da Mercia!</p>
+  <p>Bem vindos ao Açai da Mercia!</p>
 
 <div id="container">
-
+<header>
 <!-- Perfil do usuário -->
-<div id="profile">
+  <div id="profile">
 
-<img src="./assets/Açai_da_Mercia.jpg" alt="Logo do Açai da Mercia" id="logo" class="foto">
+    <img src="./assets/Açai_da_Mercia.jpg" alt="Logo do Açai da Mercia"  class="foto" id="logo">
 
-<p>@AçaidaMercia</p>
+    <p class="brand-name"><a href="https://www.instagram.com/acaidamercia" target="_blank">@AçaidaMercia</a></p>
+    <p class="brand-sutitle">O melhor açaí da sua região, feito com amor e ingredientes fresquinhos.</p>
 
-
-
-</div>
+  </div>
 
 <!-- Switch de tema claro/escuro -->
-<div id="switch">
-    <button onclick="_toggleMode()" type="button" id="themeToggle">
-    </button>
+  <div id="switch">
+<button type="button" id="themeToggle"></button>
     <span></span>
-</div>
-
+  </div>
+</header>
 
 <!-- Menu de navegação -->
 <nav>
@@ -51,19 +51,19 @@
 
     <li>
 
-        <a href="#Menu">Menu</a>
+<a id="Menu" class="section-card" type="button" onclick="abrirModal('menu')">Menu</a>
 
     </li>
 
     <li>
 
-        <a href="#Pedidos">Pedidos</a>
+<a id="Pedidos" class="section-card" type="button" onclick="abrirModal('pedidos')">Pedidos</a>
 
     </li>
 
     <li>
 
-        <a href="#Contato">Contato</a>
+<a id="Contato" class="section-card" type="button" onclick="abrirModal('contato')">Contato</a>
 
     </li>
 
@@ -72,8 +72,15 @@
 
 <!-- Conteúdo principal -->
 <main>
+  <div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="fecharModal()">&times;</span>
+    <div id="modal-body"></div>
+  </div>
+  </div>
     <section id="menu" class="section-card">
-        <h2>Menu</h2>
+       
+      <h2>Menu</h2>
         <div class="cards">
           <article class="card">
             <h3>Açaí Tradicional</h3>
@@ -96,17 +103,20 @@
       
     <!--Contato-->
        <section id="pedido" class="section-card">
+        <!--
         <h2>Peça pelo WhatsApp</h2>
         <p>Escolha seu açaí e mande direto para a Mercia.</p>
         <a class="whatsapp-button" href="https://wa.me/5543984777870" target="_blank">
           Enviar pedido
         </a>
+      -->
       </section>
-
       <section id="contato" class="section-card">
         <h2>Contato</h2>
         <p>Instagram, WhatsApp e Facebook sempre atualizados.</p>
       </section>
+
+      
 </main>
 
 
@@ -114,15 +124,15 @@
 <div id="social_links">
 
 
-<a href="https://wa.me/5543984777870" target="_blank" aria-label="WhatsApp"><ion-icon name="logo-whatsapp"></ion-icon></a>
+  <a href="https://wa.me/5543984777870" target="_blank" aria-label="WhatsApp"><ion-icon name="logo-whatsapp"></ion-icon></a>
 
-<a href="https://www.instagram.com/acaidamercia?igsh=M2V6YTVzdGU5NHY1" target="_blank" aria-label="Instagram"><ion-icon name="logo-instagram"></ion-icon></a>
+  <a href="https://www.instagram.com/acaidamercia?igsh=M2V6YTVzdGU5NHY1" target="_blank" aria-label="Instagram"><ion-icon name="logo-instagram"></ion-icon></a>
 
-<a href="https://www.facebook.com/acaidamercia" target="_blank" aria-label="Facebook"><ion-icon name="logo-facebook"></ion-icon></a>
-<!--
-<a href="" target="_blank" aria-label="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a>
--->
-<a href="https://github.com/Kayo-Nagai117" target="_blank" aria-label="GitHub"><ion-icon name="logo-github"></ion-icon></a>
+  <a href="https://www.facebook.com/acaidamercia" target="_blank" aria-label="Facebook"><ion-icon name="logo-facebook"></ion-icon></a>
+  <!--
+  <a href="" target="_blank" aria-label="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a>
+  -->
+  <a href="https://github.com/Kayo-Nagai117" target="_blank" aria-label="GitHub"><ion-icon name="logo-github"></ion-icon></a>
 
 
 </div>

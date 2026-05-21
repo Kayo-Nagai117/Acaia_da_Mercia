@@ -103,16 +103,14 @@ body * {
 	border-radius: 50%;
 	position: absolute;
 	top: 50%;
-	right: 0;
+	left: 0;
 	z-index: 1;
 	transform: translateY(-50%);
-	animation: slide-back 0.2s forwards;
+	animation: slide-back 0.3s forwards;
 }
 
 .light #switch button {
-	/*right: auto;
-	left: 0;*/
-	animation: slide-in 0.2s forwards;
+	animation: slide-in 0.3s forwards;
 }
 
 #switch span {
@@ -232,11 +230,47 @@ footer a:hover {
 
 /*animation*/
 	@keyframes slide-in{
-		from{left: 0;}
-		to{right: 50%;}
+		from{transform: translateY(-50%);}
+		to{transform: translateY(-50%) translateX(32px);}
 	}
 
 	@keyframes slide-back{
-		from{left: 50%;}
-		to{right: 0;}
+		from{transform: translateY(-50%) translateX(32px);}
+		to{transform: translateY(-50%);}
 	}
+
+
+	.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.modal.ativo {
+  display: flex;
+}
+
+.modal-content {
+  width: min(90%, 620px);
+  max-height: 85vh;
+  overflow-y: auto;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 20px;
+  padding: 24px;
+  position: relative;
+  backdrop-filter: blur(12px);
+}
+
+.close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 28px;
+  cursor: pointer;
+  color: var(--text-color);
+}
