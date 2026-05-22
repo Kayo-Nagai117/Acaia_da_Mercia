@@ -92,7 +92,7 @@ body * {
 #switch {
 	width: 64px;
 	position: relative;
-	margin: 4px ;
+	margin: 4px;
 }
 
 #switch button {
@@ -119,23 +119,19 @@ body * {
 	height: 24px;
 	background: var(--surface-color);
 	border: 1px solid var(--stroke-color);
-	
+
 	/* ESTAS DUAS LINHAS CRIAM O EFEITO DE VIDRO EMBAÇADO: */
-  backdrop-filter: blur(4px); /* Desfoca o fundo (padrão) */
-  -webkit-backdrop-filter: blur(4px); /* Compatibilidade para Safari */
+	backdrop-filter: blur(4px); /* Desfoca o fundo (padrão) */
+	-webkit-backdrop-filter: blur(4px); /* Compatibilidade para Safari */
 
-  border-radius: 9999px; /* Mantém arredondado */
+	border-radius: 9999px; /* Mantém arredondado */
 }
-
 
 #switch button:hover {
 	outline: 8px solid var(--highlight-color);
-	
 }
 
-
 #switch:hover span {
-	
 	background: var(--surface-color-hover);
 }
 
@@ -227,50 +223,56 @@ footer a:hover {
 	}
 }
 
-
 /*animation*/
-	@keyframes slide-in{
-		from{transform: translateY(-50%);}
-		to{transform: translateY(-50%) translateX(32px);}
+@keyframes slide-in {
+	from {
+		transform: translateY(-50%);
 	}
-
-	@keyframes slide-back{
-		from{transform: translateY(-50%) translateX(32px);}
-		to{transform: translateY(-50%);}
+	to {
+		transform: translateY(-50%) translateX(32px);
 	}
+}
 
+@keyframes slide-back {
+	from {
+		transform: translateY(-50%) translateX(32px);
+	}
+	to {
+		transform: translateY(-50%);
+	}
+}
 
-	.modal {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.5);
-  align-items: center;
-  justify-content: center;
-  z-index: 100;
+.modal {
+	display: none;
+	position: fixed;
+	inset: 0;
+	background: rgba(0, 0, 0, 0.5);
+	align-items: center;
+	justify-content: center;
+	z-index: 100;
 }
 
 .modal.ativo {
-  display: flex;
+	display: flex;
 }
 
 .modal-content {
-  width: min(90%, 620px);
-  max-height: 85vh;
-  overflow-y: auto;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 20px;
-  padding: 24px;
-  position: relative;
-  backdrop-filter: blur(12px);
+	width: min(90%, 620px);
+	max-height: 85vh;
+	overflow-y: auto;
+	background: rgba(255, 255, 255, 0.08);
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	border-radius: 20px;
+	padding: 24px;
+	position: relative;
+	backdrop-filter: blur(12px);
 }
 
 .close {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  font-size: 28px;
-  cursor: pointer;
-  color: var(--text-color);
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	font-size: 28px;
+	cursor: pointer;
+	color: var(--text-color);
 }
