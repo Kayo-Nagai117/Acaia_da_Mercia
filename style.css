@@ -69,6 +69,22 @@ body * {
 	padding: 0 24px;
 }
 
+/*header*/
+header {
+border:  solid 1px var(--highlight-color);
+background: var(--surface-color);
+}
+
+/*Relogio*/
+.hours {
+	font-size: 20px;
+	border: solid 1px green;
+	background: rgb(0, 255, 55);
+	width: 1px;
+	height: 1px;
+	
+}
+
 /*profile*/
 #profile img {
 	width: 112px;
