@@ -71,11 +71,19 @@ body * {
 
 /*header*/
 header {
-border:  solid 1px var(--highlight-color);
-background: var(--surface-color);
+	border:  solid 1px var(--highlight-color);
+	background: var(--surface-color);
 }
 
 /*Relogio*/
+.status {
+	font-size: 20px;
+	border: solid 1px red;
+	background: rgb(241, 4, 75);
+	width: 1px;
+	height: 1px;
+}
+
 .hours {
 	font-size: 20px;
 	border: solid 1px green;
@@ -84,6 +92,7 @@ background: var(--surface-color);
 	height: 1px;
 	
 }
+
 
 /*profile*/
 #profile img {
