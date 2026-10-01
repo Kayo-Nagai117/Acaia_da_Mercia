@@ -4,7 +4,7 @@ const logo = document.getElementById("logo");
 
 function updateTheme() {
 	if (html.classList.contains("light")) {
-		logo.src = "./assets/Açai_da_Mercia_light.png";
+		logo.src = "./assets/Açai_da_Mercia_Light.jpg";
 	} else {
 		logo.src = "./assets/Açai_da_Mercia.jpg";
 	}

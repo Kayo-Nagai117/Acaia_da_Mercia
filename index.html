@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html lang="pt-BR" class="light">
+<html lang="pt-BR" class="">
   <head>
 
-  <!-- Importação da fonte Roboto do Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Importação da fonte Roboto do Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-  <!-- Configurações de metadados para a página -->
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configurações de metadados para a página -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Link para o arquivo CSS externo -->
-  <link rel="stylesheet" href="style.css">
+    <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
 
-
-  <title>ACAI da Mercia</title>
+    <!-- Título da página -->
+    <title>ACAI da Mercia</title>
 
   </head>
 
@@ -30,115 +30,121 @@
         <div class="q-drawer__opener fixed-left"></div>
         <aside class="q-drawer q-drawer--left q-drawer--bordered q-layout--prevent"></aside>
       </div-->
-           
-        <p>Bem vindos ao Açai da Mercia!</p>
-
-      <div id="container">
-      <header>
-      <!-- Perfil do usuário -->
-        <div id="profile">
-
-            <img src="./assets/Açai_da_Mercia.jpg" alt="Logo do Açai da Mercia"  class="foto" id="logo">
-
-                  <p class="brand-name"><a href="https://www.instagram.com/acaidamercia" target="_blank">@AçaidaMercia</a></p>
-                  <p class="brand-sutitle">Av arapongas 1149 (em frente ao Sicrede)-ARAPONGAS</p>
         
-              <!-- Status de funcionamento -->
-              <div class="informacoes-status fora-horario" href="">
-                  <span class="status">
-                    <i><ion-icon name="alert-circle-outline"></ion-icon></i>
-                    <i class="materaial-icons q-icon notransate" aria-hidden="true" role="presentation">Fora de horário</i>
+      <!-- Mensagem de boas-vindas -->
+        <p>Bem vindos ao Açai da Mércia!</p>
+
+        <!-- Container principal -->
+      <div id="container">
+        <header>
+          <!-- Perfil do usuário -->
+          <div id="profile">
+
+              <img src="./assets/Açai_da_Mercia.jpg" alt="Logo do Açai da Mercia"  class="foto" id="logo">
+
+                    <h1 class="brand-title">Açaí da Mércia</h1>
+
+                    <p class="instragram"><a href="https://www.instagram.com/acaidamercia" target="_blank">@AçaidaMercia</a></p>
+                    
+                    <p class="brand-sutitle">Av arapongas 1149 (em frente ao Sicrede)-ARAPONGAS</p>
+          
+                <!-- Status de funcionamento -->
+                <div class="informacoes-status fora-horario" href="">
+                    <span class="status">
+                      <i><ion-icon name="alert-circle-outline"></ion-icon></i>
+                      <i class="materaial-icons q-icon notransate" aria-hidden="true" role="presentation">Fora de horário</i>
+                    </span>
+                </div>
+
+                <div class="informacoes-status">
+                  <span class="hours">
+                    <i><ion-icon name="alarm-outline"></ion-icon></i>
+                    
+                    <i class="materaial-icons q-icon notransate" aria-hidden="true" role="presentation">14:30 - 22:00</i>
                   </span>
-              </div>
+                </div> 
 
-              <div class="informacoes-status">
-                <span class="hours">
-                  <i><ion-icon name="alarm-outline"></ion-icon></i>
-                  <i class="materaial-icons q-icon notransate" aria-hidden="true" role="presentation">14:30 - 22:00</i>
-                </span>
-              </div> 
-
-        </div>
-
-        <!-- Switch de tema claro/escuro -->
-        <div id="switch">
-          <button type="button"     id="themeToggle"></button>
-            <span></span>
-        </div>
-
-      </header>
-
-      <!-- Menu de navegação -->
-      <nav>
-
-        <ul>
-
-          <li>
-
-            <a id="Menu" class="section-card" type="button" onclick="abrirModal('menu')">Menu</a>
-
-          </li>
-
-          <li>
-
-            <a id="Pedidos" class="section-card" type="button" onclick="abrirModal('pedidos')">Pedidos</a>
-
-          </li>
-
-          <li>
-
-            <a id="Contato" class="section-card" type="button" onclick="abrirModal('contato')">Contato</a>
-
-          </li>
-
-        </ul>
-      </nav>
-
-      <!-- Conteúdo principal -->
-      <main>
-        <div id="modal" class="modal">
-          <div class="modal-content">
-            <span class="close" onclick="fecharModal()">&times;</span>
-            <div id="modal-body"></div>
           </div>
-        </div>
-          <section id="menu" class="section-card">
-            
-            <h2>Menu</h2>
-              <div class="cards">
-                <article class="card">
-                  <h3>Açaí Tradicional</h3>
-                  <p>300ml com granola e mel.</p>
-                  <span>R$ 16,90</span>
-                </article>
-                <article class="card">
-                  <h3>Açaí Premium</h3>
-                  <p>500ml com banana, leite condensado e castanhas.</p>
-                  <span>R$ 24,90</span>
-                </article>
-                <article class="card">
-                  <h3>Tropical</h3>
-                  <p>450ml com morango, kiwi e coco.</p>
-                  <span>R$ 22,90</span>
-                </article>
-              </div>
-            </section>
-            <br>
-            
-          <!--Contato-->
-            <section id="pedido" class="section-card">
-              <!--
-              <h2>Peça pelo WhatsApp</h2>
-              <p>Escolha seu açaí e mande direto para a Mercia.</p>
-              <a class="whatsapp-button" href="https://wa.me/5543984777870" target="_blank">
-                Enviar pedido
-              </a>
-            -->
-            </section>
-            <section id="contato" class="section-card">
-              <h2>Contato</h2>
-              <p>Instagram, WhatsApp e Facebook sempre atualizados.</p>
-            </section>
+
+          <!-- Switch de tema claro/escuro -->
+          <div id="switch">
+            <button type="button"     id="themeToggle"></button>
+              <span></span>
+          </div>
+
+        </header>
+
+        <!-- Menu de navegação -->
+        <nav>
+
+          <ul>
+
+            <li>
+
+              <button id="Menu" class="section-card" type="button" onclick="abrirModal('menu')"> <ion-icon name="list-outline"></ion-icon>Menu</button>
+             
+            </li>
+
+            <li>
+
+              <button id="Pedidos" class="section-card" type="button" onclick="abrirModal('pedidos')"> <ion-icon name="cart-outline"></ion-icon> Pedidos</button>
+
+            </li>
+
+            <li>
+
+              <button id="Contato" class="section-card" type="button" onclick="abrirModal('contato')"><ion-icon name="chatbubbles-outline"></ion-icon> Contato</button>
+
+            </li>
+
+          </ul>
+        </nav>
+
+        <!-- Conteúdo principal -->
+        <main>
+          <div id="modal" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="fecharModal()">&times;</span>
+              <div id="modal-body"></div>
+            </div>
+          </div>
+            <section id="menu" class="section-card">
+              
+              <h2>Menu</h2>
+                <div class="cards">
+                  <article class="card">
+                    <h3>Açaí Tradicional</h3>
+                    <p>300ml com granola e mel.</p>
+                    <span>R$ 16,90</span>
+                  </article>
+                  <article class="card">
+                    <h3>Açaí Premium</h3>
+                    <p>500ml com banana, leite condensado e castanhas.</p>
+                    <span>R$ 24,90</span>
+                  </article>
+                  <article class="card">
+                    <h3>Tropical</h3>
+                    <p>450ml com morango, kiwi e coco.</p>
+                    <span>R$ 22,90</span>
+                  </article>
+                </div>
+              </section>
+              <br>
+              
+              <!--Contato-->
+              <section id="pedido" class="section-card">
+                <!--
+                <h2>Peça pelo WhatsApp</h2>
+                <p>Escolha seu açaí e mande direto para a Mercia.</p>
+                <a class="whatsapp-button" href="https://wa.me/5543984777870" target="_blank">
+                  Enviar pedido
+                </a>
+              -->
+              </section>
+                <section id="contato" class="section-card">
+                <h2>Contato</h2>
+                <p>Instagram, WhatsApp e Facebook sempre atualizados.</p>
+              </section>
 
             
       </main>

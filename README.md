@@ -9,7 +9,7 @@
 
 <p>Esse projeto foi baseado no <a href=https://acaidamercia.pedir.online/#>site</a> da minha Mãe (Açai da Mercia) </p>
 
-<img src=./Site_da_Mercia.png>
+<img src=./Site_da_Mercia.jpg>
 
 <h1 align="center"> <a href=https://kayo-nagai117.github.io/Acaia_da_Mercia/>⚙️PROJETO EM ANDAMENTO🛠️</a> </h1>
 

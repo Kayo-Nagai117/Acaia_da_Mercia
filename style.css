@@ -170,7 +170,8 @@ ul {
 	padding: 24px 0;
 }
 
-ul li a {
+nav button {
+	cursor: pointer;
 	display: flex;
 	justify-content: center;
 	height: 35px;
@@ -183,14 +184,14 @@ ul li a {
 	backdrop-filter: blur(5px);
 	-webkit-backdrop-filter: blur(5px);
 
-	text-decoration: none;
+	/*text-decoration: none;*/
 	font-weight: 350;
 
 	transition: background 0.3s;
 }
 
 /*pseudo-selector*/
-ul li a:hover {
+nav button:hover {
 	background: var(--surface-color-hover);
 	border: 1.5px solid var(--text-color);
 }
